@@ -1,0 +1,16 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 1440px;
+    height: 72px;
+}
+
+ul {
+    list-style:  none;
+    display: flex;
+    gap: 16px;
+    font-weight: 500;
+}
+
