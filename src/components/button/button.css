@@ -1,0 +1,28 @@
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.black{
+    width: 220px;
+    height: 44px;
+    background-color: black;
+    color: white;
+    display: flex;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.outline{
+    width: 100%;
+    height: 44px;
+    background-color: #fff;
+    color: black;
+    display: flex;
+    gap: 8px;
+    border: 2px solid black;
+    border-radius: 5px;
+}

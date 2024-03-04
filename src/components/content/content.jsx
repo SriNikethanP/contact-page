@@ -1,8 +1,14 @@
-import "../content/content.css"
+import Button from "../button/button";
+import "../content/content.css";
+import Input from "../input/input";
+import { MdOutlineMessage } from "react-icons/md";
+import { MdCall } from "react-icons/md";
 
 export default function Content() {
   return (
     <main>
+      <div className="main">
+
       <div className="contact">
         <h1>CONTACT US</h1>
       </div>
@@ -16,25 +22,39 @@ export default function Content() {
       </div>
       <div className="mainContent">
         <div className="fillDetails">
-                  <div className="calling">
-                      <div className="callingBtn">
-                          <button>VIA SUPPORT CHAT</button>
-                          <button>VIA CALL</button>
-                      </div>
-                      <div className="emailBtn">
-                          <button>VIA EMAIL FORM</button>
-                      </div>
+          <div className="calling">
+            <div className="callingBtn">
+              <Button
+                text="VIA SUPPORT CHAT"
+                icon={<MdOutlineMessage fontSize="24px" />}
+              />
+              <Button text="VIA CALL" icon={<MdCall fontSize="24px" />} />
+            </div>
+            <div className="emailBtn">
+              <Button
+                isOutline={true}
+                text="VIA EMAIL FORM"
+                icon={<MdOutlineMessage fontSize="24px" />}
+              />
+            </div>
           </div>
           <div className="details">
-            <input type="text" />
-            <input type="text" />
-            <input type="text" />
-            <button>Submit</button>
+            <Input type="Name" />
+            <Input type="E-Mail" />
+            <Input type="TEXT" />
+            <div className="submitBtn">
+              <Button text="SUBMIT"/>
+            </div>
           </div>
         </div>
         <div className="image">
-          <img className="svgImage" src="/images/contentimage.svg" alt="image" />
+          <img
+            className="svgImage"
+            src="/images/contentimage.svg"
+            alt="image"
+          />
         </div>
+      </div>
       </div>
     </main>
   );

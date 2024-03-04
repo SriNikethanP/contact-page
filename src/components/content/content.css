@@ -9,26 +9,50 @@
     font-weight: bolder;
     font-size: 48px;
 }
+
 .fillDetails{
     margin: 71.5px 0;
-    max-width: 472px;
+    width: 472px;
     height: 457px;
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    align-items: center;
+    justify-content: center;
 }
 .details{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
+    width: 440px;
 }
-main{
-    max-height: calc(100vh - 72px);
+.main{
     margin: 0px 81px 0px 198px;
 }
 .svgImage{
-max-height: 570px;
+max-height: 550px;
 }
 .about{
     width: 975px;
     font-size: 16px;
     font-weight: 500;
+}
+.callingBtn{
+    display: flex;
+    gap: 32px;
+}
+.calling{
+    width: 472px;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.submitBtn{
+    display: flex;
+    justify-content: end;
+width: 100%;
+    align-items: center;
 }

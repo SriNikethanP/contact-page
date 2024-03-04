@@ -1,0 +1,25 @@
+.form {
+  width: 440px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+form label {
+  font-size: 14px;
+  font-weight: 600;
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  padding: 0 5px;
+  background-color: white;
+}
+
+input {
+  min-width: 420px;
+  padding: 0 8px;
+  height: 40px;
+}
+
+.text>input{
+ height: 120px;
+}
